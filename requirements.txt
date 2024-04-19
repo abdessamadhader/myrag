@@ -1,0 +1,7 @@
+langchain-core
+tiktoken
+langchain-nomic
+streamlit
+PyPDF2
+chromadb
+ollama 

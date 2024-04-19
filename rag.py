@@ -1,8 +1,7 @@
 import streamlit as st
 import os 
 import PyPDF2
-# install dependencies
-# !pip install langchain-community
+
 
 from langchain_community.document_loaders import WebBaseLoader
 from langchain_community.vectorstores import Chroma
@@ -17,7 +16,6 @@ from langchain_nomic.embeddings import NomicEmbeddings
 from langchain.schema import Document
 
 
-# nk-soZ88R5mcboBQP5r0TmJLyWHiRuwoKUrQ8CKIoh7__0
 
 def read_pdf(file):
     pdfReader = PyPDF2.PdfReader(file)
@@ -57,11 +55,6 @@ def retriever(doc, question):
 
     return after_rag_chain.invoke(question)
 
-# now we will add a rag but with links to the retriever
-
-
-
-# retrieve the website content
 
 
 
@@ -93,13 +86,11 @@ def retriever_with_links(question, links):
     return after_rag_chain.invoke(question)
 
 
-# lets save the history of the conversation
 
 
-# example usage streamlit with a button to switch between the two
 st.title("RAG with retriever")
 
-# switch button to choose between pdf and website
+
 switch = st.radio("Choose between pdf or website", ["pdf", "website"])
 if switch == "pdf":
     file = st.file_uploader("Upload a pdf file", type=["pdf"])

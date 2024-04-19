@@ -5,3 +5,8 @@ This application leverages the Retrieval-Augmented Generation (RAG) technique to
 Feel free to check the app documentation via this link https://myrag.readthedocs.io/en/latest/
 
 
+
+![image](https://github.com/abdessamadhader/myrag/assets/136916776/15448fbe-5543-4126-ad05-8d4042e1af80)
+
+
+

@@ -11,6 +11,7 @@ copyright = '2024, abdessamad'
 author = 'abdessamad'
 release = '2024'
 
+import sphinx_rtd_theme
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
